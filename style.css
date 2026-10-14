@@ -1,0 +1,97 @@
+h1 {
+  color: hotpink;
+  font-family: Georgia, serif;
+}
+
+/* Layout created by averageGamester (https://layouts.spacehey.com/layout?id=100785) */
+.star {
+  position: fixed;
+  top: -60px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  image-rendering: pixelated;
+  animation: fallingstars 18s linear infinite;
+  pointer-events: none;
+}
+
+.star.yellow {
+  filter: none;
+}
+
+.star.blue {
+  filter: hue-rotate(160deg);
+}
+
+@keyframes fallingstars {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  8% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(15vw, 115vh, 0) rotate(360deg);
+  }
+}
+
+.star.one {
+  left: 90%;
+  animation-delay: 10s;
+}
+
+.star.six {
+  left: 0%;
+  animation-delay: 6s;
+}
+
+.star.two {
+  left: 10%;
+  animation-delay: 15s;
+}
+
+.star.seven {
+  left: 20%;
+  animation-delay: 7s;
+}
+
+.star.three {
+  left: 30%;
+  animation-delay: 2s;
+}
+
+.star.eight {
+  left: 40%;
+  animation-delay: 7s;
+}
+
+.star.four {
+  left: 50%;
+  animation-delay: 9s;
+}
+
+.star.nine {
+  left: 60%;
+  animation-delay: 12s;
+}
+
+.star.five {
+  left: 70%;
+  animation-delay: 11s;
+}
+
+.star.ten {
+  left: 80%;
+  animation-delay: 18s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star {
+    display: none;
+  }
+}
